@@ -3,6 +3,7 @@ import Accordion from "./Accardion.js";
 import Search from "./Search.js";
 import DropDown from "./DropDown.js";
 import Translate from "./Translate.js";
+import Header from "./Header.js";
 ///////////////////////////////////////////////
 
 const dataAccardion = [
@@ -62,28 +63,7 @@ const route = function () {
 const App = function () {
   return (
     <div>
-      <div class="ui pointing menu">
-        <a href="/dropDown" class="active item">
-          DropDown
-        </a>
-        <a href="/translate" class="item">
-          Translate
-        </a>
-        <a href="/search" class="item">
-          Search
-        </a>
-        <a href="/accordion" class="item">
-          Accordion
-        </a>
-        <div class="right menu">
-          <div class="item">
-            <div class="ui transparent icon input">
-              <input type="text" placeholder="Search..." />
-              <i class="search link icon"></i>
-            </div>
-          </div>
-        </div>
-      </div>
+      <Header />
       <div class="ui segment">{route()}</div>
     </div>
   );
