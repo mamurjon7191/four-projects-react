@@ -3,6 +3,7 @@ import Accordion from "./Accardion.js";
 import Search from "./Search.js";
 import DropDown from "./DropDown.js";
 import Translate from "./Translate.js";
+///////////////////////////////////////////////
 
 const dataAccardion = [
   {
@@ -21,9 +22,11 @@ const dataAccardion = [
     javob: "Css udar",
   },
 ];
+
 const getDropdown = function (e) {
   console.log(e);
 };
+
 const dataDropdown = [
   {
     Label: "English",
@@ -42,6 +45,7 @@ const dataDropdown = [
     Value: "ar",
   },
 ];
+
 const route = function () {
   if (window.location.pathname === "/search") {
     return <Search />;
@@ -84,22 +88,5 @@ const App = function () {
     </div>
   );
 };
-
-// class App extends React.Component {
-//   constructor(props) {
-//     super(props);
-//   }
-//   render() {
-//     return (
-//       <div>
-
-//         {/* <Accordion data={dataAccardion} /> */}
-//         {/* <Search /> */}
-//         {/* <DropDown data={dataDropdown} /> */}
-//         <Translate data={dataDropdown} />
-//       </div>
-//     );
-//   }
-// }
 
 export default App;
